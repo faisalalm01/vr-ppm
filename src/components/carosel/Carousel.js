@@ -1,36 +1,30 @@
 import React, { Component } from 'react'
-import {Carousel} from 'react-bootstrap'
-import "./Carosel.css"
+import { Jumbotron, Button, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
-export default class Carosel extends Component {
+export default class Banner extends Component {
     render() {
         return (
-            <div>
-               <Carousel className='banner'>
-  <Carousel.Item interval={500}>
-    <img alt="Carosel"
-      style={{height:'400px'}}
-      className="d-block w-100"
-      src="bukubanner1.jpg"/>
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>dasadasdadasdadadasdasdad</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img alt="corosel 2"
-      style={{height:'400px'}}
-      className="d-block w-100"
-      src="bukubanner2.png"
-    />
+            <Jumbotron className='text-center'>
+                <Container>
+                    <div>
+                        <div className='col-md-12 my-5'>
 
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  </Carousel>
-            </div>
+                        <h1>Hello, world!</h1>
+                        <p>
+                            This is a simple hero unit, a simple jumbotron-style component for calling
+                            extra attention to featured content or information.
+                        </p>
+                        </div>
+                        <div className='col-md-12 pt-5 my-5'>
+                        <p>
+                            <Link to={'./panel'}><Button className='' variant="primary">Go Visit Tour</Button>
+                            </Link>
+                        </p>
+                        </div>
+                    </div>
+                </Container>
+            </Jumbotron>
         )
     }
 }
