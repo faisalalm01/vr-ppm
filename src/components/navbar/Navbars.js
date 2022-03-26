@@ -1,57 +1,42 @@
-import React, { Component} from 'react'
-// import {Link} from 'react-router-dom'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'
-import "./Navbars.css"
-import {
-  Container,
-  Nav,
-  Navbar,
-} from "react-bootstrap";
-// import "./style.css"
-
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Nav, Navbar, NavDropdown  } from 'react-bootstrap';
+import '../style.css';
 
 export default class Navbars extends Component {
   render() {
     return (
-      <Navbar className="navbar-translate" expand="md" fixed="top" variant="dark" bg="primary">
-        <Container>
-        <Navbar.Brand href="#home">Main</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto menumain">
-            <Nav.Link className="btn btn-primary m-2" href={'./panel'}>Home</Nav.Link>
-            <Nav.Link className="btn btn-primary m-2"href="#link">Link</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    );
-  }
+
+<nav className=" navbar-expand-lg navbar-light fixed-top ">
+
+<Navbar className='style' expand="lg" bg="danger" variant='light'>
+<Navbar.Brand className="navbar-brand test" href="#">VrTour App</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav "/>
+                <Navbar.Collapse id=" mr-auto basic-navbar-nav ">
+                    <Nav className="ml-auto ">                                                   
+                    <Nav.Item >
+                        <Nav.Link>
+                        <Link className="text-white" to="/">Home</Link>
+                        </Nav.Link>
+                    </Nav.Item >
+                    <NavDropdown title={ <span className="text-white">Attractions</span>} id="basic-nav-dropdown" >
+                            <NavDropdown.Item href="/viewattractions">View Attraction</NavDropdown.Item>
+                            <NavDropdown.Item href="/addattractions">Add Attractions</NavDropdown.Item>
+                        </NavDropdown>
+                    <Nav.Item>
+                        <Nav.Link>
+                        <Link className="text-white" to="/about">About</Link>
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
+                        <Link className="text-white" to="/#">Contact</Link>
+                        </Nav.Link>
+                    </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+                </Navbar>
+        </nav>
+    )
 }
-// export default class Navbars extends Component {
-//   state = {
-//     jumlah : 0
-//   }
-//     render() {
-//         return (
-//             <div >
-//             <Navbar className="style justify-content-center" bg="dark" expand="lg">
-//               <Link to ='/'>
-//                 <Navbar.Brand style={{color:'white'}}>BooksStore</Navbar.Brand>
-//               </Link>
-//                 <Navbar.Toggle font-color="white" aria-controls="basic-navbar-nav" />
-//                   <Navbar.Collapse id="basic-navbar-nav">
-//                     <Nav className="ml-auto">
-//                   <Nav.Link ><Link to= "/" style={{color:'white'}}><b>Home</b></Link></Nav.Link>
-//                   <Nav.Link><Link to="/login" style={{color:'white'}}><b>Login</b></Link></Nav.Link>
-//                   <Nav.Link className="shop-cart">
-//                     <FontAwesomeIcon icon={faShoppingCart}/>
-//                   </Nav.Link>
-//                 </Nav>
-//               </Navbar.Collapse>
-//             </Navbar>
-//             </div>
-//             )
-//         }
-//     }
+}

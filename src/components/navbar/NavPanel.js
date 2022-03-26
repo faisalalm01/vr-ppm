@@ -18,7 +18,7 @@ export default class NavPanel extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="mr-auto menumain">
                     {/* <Link to={'/'}> */}
-                      <Nav.Link className="btn btn-primary m-2" variant="dark" href={'./'}>Back To Landing Page</Nav.Link>
+                      <Nav.Link className="btn btn-primary m-2" bg="dark" href={'./'}>Back To Landing Page</Nav.Link>
                       {/* </Link> */}
                   </Nav>
                 </Navbar.Collapse>
