@@ -1,7 +1,4 @@
-.banner {
-    /* background-image: url('../components/assets/bukubanner.jpg'); */
-    background-size: cover;
-}
+
 .shop-cart span{
     background-color: red;
     border-radius: 50%;
@@ -19,4 +16,12 @@
     font-family:serif;
     color: cornsilk;
 
+}
+.btn {
+    font-size: larger;
+    padding: 5;
+}
+
+.banner{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

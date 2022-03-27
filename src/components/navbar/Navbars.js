@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar, NavDropdown  } from 'react-bootstrap';
+import { Nav, Navbar  } from 'react-bootstrap';
 import '../style.css';
 
 export default class Navbars extends Component {
@@ -19,10 +19,10 @@ export default class Navbars extends Component {
                         <Link className="text-white" to="/">Home</Link>
                         </Nav.Link>
                     </Nav.Item >
-                    <NavDropdown title={ <span className="text-white">Attractions</span>} id="basic-nav-dropdown" >
+                    {/* <NavDropdown title={ <span className="text-white">Attractions</span>} id="basic-nav-dropdown" >
                             <NavDropdown.Item href="/viewattractions">View Attraction</NavDropdown.Item>
                             <NavDropdown.Item href="/addattractions">Add Attractions</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                     <Nav.Item>
                         <Nav.Link>
                         <Link className="text-white" to="/about">About</Link>

@@ -6,7 +6,7 @@ import '../style.css'
 export default class Banner extends Component {
     render() {
         return (
-            <Jumbotron className='text-center banner d-block h-75'>
+            <Jumbotron className='text-center banner'>
                     <div>
                         <div className='col-md-12 my-5'>
                         
