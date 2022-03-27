@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Carousel, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Carousel } from 'react-bootstrap'
+// import { Link } from 'react-router-dom'
 import '../style.css'
 
 export default class Corousel extends Component {
@@ -15,9 +15,7 @@ export default class Corousel extends Component {
               />
               <Carousel.Caption> 
                 <h1>SELAMAT DATANG DI HALAMAN VIRTUAL TOUR</h1>
-                <h2>di SMAN 1 Kota Tegal</h2>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                <Link to={'./panel'}><Button>Go to Visit Tour</Button></Link>
+                <h2>SMAN 1 KOTA TEGAL</h2>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,9 +25,8 @@ export default class Corousel extends Component {
                 alt="Second slide"
               />     
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <Link to={'./panel'}><Button>Go to Visit Tour</Button></Link>
+              <h1>SELAMAT DATANG DI HALAMAN VIRTUAL TOUR</h1>
+                <h2>SMAN 1 KOTA TEGAL</h2>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

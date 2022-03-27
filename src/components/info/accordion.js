@@ -25,7 +25,7 @@ export default class Accord extends Component {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>Greetings of the day :)</Typography>
+            <Typography>Tekan tombol "Go Visit Tour" untuk masuk ke halaman tour</Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion className="w-100 mb-3 p-3 shadow" style={{ width: 400}}>
@@ -41,7 +41,9 @@ export default class Accord extends Component {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>Greetings of the day :)</Typography>
+            <Typography>Pada halaman Tour, jika ingin pindah ke gambar selanjutnya bisa tekan gambar point koordinat yang tersedia.
+               Terdapat list gambar pada bagian bawah untul memudahkan anda berpindah gambar.
+            </Typography>
           </AccordionDetails>
         </Accordion>
 
@@ -58,7 +60,7 @@ export default class Accord extends Component {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>Greetings of the day :)</Typography>
+            <Typography>Pada bagian kanan terdapat tombol control bar yang memiliki 2 aksi, mode vr dan gyroscope yang bisa digunakkan pada perangkat mobile anda</Typography>
           </AccordionDetails>
         </Accordion>
         
@@ -75,7 +77,7 @@ export default class Accord extends Component {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>Greetings of the day :)</Typography>
+            <Typography>Terdapat tombol untuk kembali ke landing page pada bagian atas</Typography>
           </AccordionDetails>
         </Accordion>
         </Container>
