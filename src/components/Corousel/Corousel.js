@@ -6,7 +6,7 @@ import '../style.css'
 export default class Corousel extends Component {
     render() {
         return (
-            <Carousel fade className='banner'>
+            <Carousel fade className='banner mt-5'>
             <Carousel.Item>
               <img
                 className="d-block w-100"
