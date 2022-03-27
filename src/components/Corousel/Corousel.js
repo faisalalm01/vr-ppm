@@ -23,7 +23,7 @@ export default class Corousel extends Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
+                src='banner2.png'
                 alt="Second slide"
               />     
               <Carousel.Caption>
