@@ -10,7 +10,7 @@ export default class Cards extends Component {
         <Card.Body>
           <Card.Title>Klik tombol untuk kunjungi tour :</Card.Title>
           <Card.Text>
-            With supporting text below as a natural lead-in to additional content.
+           
           </Card.Text>
             <Link to={'./panel'}><Button variant='primary'>Go to Visit Tour</Button></Link>
         </Card.Body>
